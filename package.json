@@ -1,0 +1,44 @@
+{
+  "name": "@dashkite/masonry-watch",
+  "version": "0.0.0",
+  "description": "Watch combinators for defining watch tasks",
+  "keywords": [],
+  "homepage": "https://github.com/dashkite/masonry-watch#readme",
+  "bugs": {
+    "url": "https://github.com/dashkite/masonry-watch/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashkite/masonry-watch.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Daniel Yoder",
+  "exports": {
+    ".": {
+      "browser": "./build/browser/src/index.js",
+      "node": "./build/node/src/index.js"
+    }
+  },
+  "main": "build/node/src/index.js",
+  "files": [
+    "build/browser/src",
+    "build/node/src"
+  ],
+  "scripts": {
+    "test": "genie test",
+    "build": "genie build"
+  },
+  "devDependencies": {
+    "@dashkite/amen": "^0.2.0",
+    "@dashkite/amen-console": "^0.0.2",
+    "@dashkite/assert": "^0.1.4",
+    "@dashkite/genie": "link:../genie",
+    "@dashkite/genie-coffee": "link:../genie-coffee"
+  },
+  "dependencies": {
+    "@dashkite/dolores": "link:../dolores",
+    "@dashkite/drn-sky": "link:../drn-sky",
+    "@dashkite/joy": "link:../joy",
+    "chokidar": "^3.5.3"
+  }
+}
