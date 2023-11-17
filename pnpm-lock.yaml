@@ -34,6 +34,9 @@ devDependencies:
   '@dashkite/genie-coffee':
     specifier: link:../genie-coffee
     version: link:../genie-coffee
+  '@dashkite/genie-sky':
+    specifier: link:../genie-sky
+    version: link:../genie-sky
 
 packages:
 

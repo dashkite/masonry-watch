@@ -2,10 +2,10 @@ import * as Fn from "@dashkite/joy/function"
 import { generic } from "@dashkite/joy/generic"
 import * as It from "@dashkite/joy/iterable"
 import * as Type from "@dashkite/joy/type"
-import * as DRN from "@dashkite/drn-sky"
 import * as SNS from "@dashkite/dolores/sns"
 import chokidar from "chokidar"
 import { Path, Event } from "./helpers"
+import configuration from "./configuration"
 
 watcher = ( build ) ->
   do ({ watcher } = {}) ->
@@ -99,7 +99,7 @@ notify = do ({ topic } = {}) ->
   Fn.tee ({ source, event, module }) -> 
     # TODO add source path
     # TODO how to determine whether the souce is “local”?
-    topic ?= await SNS.create await DRN.resolve "drn:topic/dashkite/development"
+    topic ?= await SNS.create configuration.topic
     SNS.publish topic, { event..., source, module: module.name }
 
 export { glob, match, notify }
