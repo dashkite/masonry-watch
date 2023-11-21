@@ -15,7 +15,6 @@
   "author": "Daniel Yoder",
   "exports": {
     ".": {
-      "browser": "./build/browser/src/index.js",
       "node": "./build/node/src/index.js"
     }
   },

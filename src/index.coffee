@@ -97,6 +97,7 @@ glob = do ({ glob } = {}) ->
 
 notify = do ({ topic } = {}) ->
   Fn.tee ({ source, event, module }) -> 
+    console.log { event }
     # TODO add source path
     # TODO how to determine whether the souce is “local”?
     topic ?= await SNS.create configuration.topic
