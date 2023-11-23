@@ -21,6 +21,7 @@ watcher = ( build ) ->
             root: build.root # backward compatibility
             path
             build 
+            module
           }
 
 # TODO add this to joy/iterable
@@ -97,7 +98,6 @@ glob = do ({ glob } = {}) ->
 
 notify = do ({ topic } = {}) ->
   Fn.tee ({ source, event, module }) -> 
-    console.log { event }
     # TODO add source path
     # TODO how to determine whether the souce is “local”?
     topic ?= await SNS.create configuration.topic
