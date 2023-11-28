@@ -31,14 +31,14 @@
     "@dashkite/amen": "^0.2.0",
     "@dashkite/amen-console": "^0.0.2",
     "@dashkite/assert": "^0.1.4",
+    "@dashkite/drn-sky": "link:../drn-sky",
     "@dashkite/genie": "link:../genie",
     "@dashkite/genie-coffee": "link:../genie-coffee",
-    "@dashkite/genie-sky": "link:../genie-sky"
+    "@dashkite/genie-yaml-drn": "link:../genie-yaml-drn"
   },
   "dependencies": {
     "@dashkite/dolores": "link:../dolores",
-    "@dashkite/drn-sky": "link:../drn-sky",
-    "@dashkite/joy": "link:../joy",
+    "@dashkite/joy": "^0.3.16",
     "chokidar": "^3.5.3"
   }
 }

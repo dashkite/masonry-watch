@@ -8,12 +8,9 @@ dependencies:
   '@dashkite/dolores':
     specifier: link:../dolores
     version: link:../dolores
-  '@dashkite/drn-sky':
-    specifier: link:../drn-sky
-    version: link:../drn-sky
   '@dashkite/joy':
-    specifier: link:../joy
-    version: link:../joy
+    specifier: ^0.3.16
+    version: 0.3.16
   chokidar:
     specifier: ^3.5.3
     version: 3.5.3
@@ -28,15 +25,18 @@ devDependencies:
   '@dashkite/assert':
     specifier: ^0.1.4
     version: 0.1.4
+  '@dashkite/drn-sky':
+    specifier: link:../drn-sky
+    version: link:../drn-sky
   '@dashkite/genie':
     specifier: link:../genie
     version: link:../genie
   '@dashkite/genie-coffee':
     specifier: link:../genie-coffee
     version: link:../genie-coffee
-  '@dashkite/genie-sky':
-    specifier: link:../genie-sky
-    version: link:../genie-sky
+  '@dashkite/genie-yaml-drn':
+    specifier: link:../genie-yaml-drn
+    version: link:../genie-yaml-drn
 
 packages:
 
@@ -58,7 +58,6 @@ packages:
 
   /@dashkite/joy@0.3.16:
     resolution: {integrity: sha512-dsU0us4j1Pb+zceoBvLbnZ2PbmULkJUtM2vtWLxKmoc1DE4w9SVTiPTe6JWvF0A0vk90ldv+Lc9qEA5x3O+DtQ==}
-    dev: true
 
   /ansi-styles@4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
