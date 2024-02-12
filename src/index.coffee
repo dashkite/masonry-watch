@@ -64,8 +64,8 @@ match = do ({ match } = {}) ->
           handler context
       
   generic match, Type.isObject, Type.isArray,
-      ( query, handlers ) -> 
-        match query, Fn.flow handlers
+    ( query, handlers ) -> 
+      match query, Fn.flow handlers
   
   match
 
