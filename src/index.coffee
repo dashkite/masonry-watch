@@ -93,14 +93,11 @@ glob = do ({ glob } = {}) ->
 
   generic glob, isGlob, ( target ) -> ->
     watch watcher target
+
+  generic glob, Type.isString, ( target ) -> ->
+    watch watcher glob: target
   
   glob
 
-notify = do ({ topic } = {}) ->
-  Fn.tee ({ source, event, module }) -> 
-    # TODO add source path
-    topic ?= await SNS.create configuration.topic
-    SNS.publish topic, { event..., source, module: module?.name }
-
-export { glob, match, notify }
-export default { glob, match, notify }
+export { glob, match }
+export default { glob, match }
