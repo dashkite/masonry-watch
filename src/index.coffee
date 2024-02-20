@@ -13,6 +13,7 @@ watcher = ( build ) ->
     watcher = chokidar.watch build.glob, 
       cwd: build.root
       usePolling: true
+      ignoreInitial: true
     It.events "all", 
       Event.map watcher,
         all: ( event, path ) ->
