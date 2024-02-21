@@ -37,9 +37,9 @@ devDependencies:
   '@dashkite/genie-coffee':
     specifier: link:../genie-coffee
     version: link:../genie-coffee
-  '@dashkite/genie-yaml-drn':
-    specifier: link:../genie-yaml-drn
-    version: link:../genie-yaml-drn
+  '@dashkite/genie-yaml':
+    specifier: link:../genie-yaml
+    version: link:../genie-yaml
 
 packages:
 
