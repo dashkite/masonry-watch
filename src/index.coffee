@@ -25,7 +25,6 @@ watcher = ( build ) ->
             module
           }
 
-# TODO add this to joy/iterable
 merge = ( reactors ) ->
   do ({ q } = {}) ->
     q = It.Queue.create()
@@ -35,7 +34,6 @@ merge = ( reactors ) ->
           q.enqueue product
     loop yield await q.dequeue()
 
-# TODO replace Joy version with something more like this?
 _match = do ({ match } = {}) ->
 
   match = generic name: "match"
