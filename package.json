@@ -35,6 +35,7 @@
     "@dashkite/genie": "^0.8.4",
     "@dashkite/genie-clean": "link:../genie-clean",
     "@dashkite/genie-coffee": "link:../genie-coffee",
+    "@dashkite/genie-release": "link:../genie-release",
     "@dashkite/genie-yaml": "link:../genie-yaml",
     "@dashkite/vista": "link:../vista"
   },
