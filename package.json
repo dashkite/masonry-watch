@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/masonry-watch",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Watch combinators for defining watch tasks",
   "keywords": [],
   "homepage": "https://github.com/dashkite/masonry-watch#readme",
